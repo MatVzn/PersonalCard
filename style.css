@@ -32,9 +32,38 @@ main {
   width: 600px;
   height: 400px;
 
-  padding: 2px;
+  padding: 4px;
 }
 
 .banner {
   background-color: #c9b69e;
+  border-radius: 16px;
+  
+
+  width: 100%;
+  height: 140px;
+}
+
+img {
+  background-color: #c9b69e;
+  border-radius: 100px;
+  border: 4px #ffffff solid;
+  box-shadow: 2px 2px 5px 1px rgba(75, 75, 75, 0.52);
+
+  width: 130px;
+
+  position: inherit;
+  margin-top: 50px;
+}
+
+.status {
+  background-color: #d1a664;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 1px rgba(75, 75, 75, 0.52);
+
+  width: 130px;
+  height: 25px;
+
+  position: inherit;
+  margin-top: 165px;
 }
