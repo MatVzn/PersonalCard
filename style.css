@@ -31,9 +31,16 @@ main {
   transform: translateY(-50%);
 
   width: 600px;
-  height: 400px;
+  height: 440px;
 
   padding: 4px;
+}
+
+.line {
+  margin-top: 30px;
+  height: 1.5px;
+  width: 100%;
+  background-color: #c9b69e6c;
 }
 
 .banner {
@@ -41,15 +48,23 @@ main {
   border-radius: 16px;
 
   width: 100%;
-  height: 140px;
+  height: 120px;
 }
 
-a {
+a.image {
   position: inherit;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
-img {
+a.mailto {
+ transition: transform .2s;
+}
+
+a.mailto:hover {
+  transform: scale(1.05);
+}
+
+.perfil {
   background-color: #c9b69e;
   border-radius: 100px;
   border: 4px #ffffff solid;
@@ -60,24 +75,114 @@ img {
   width: 130px;
 }
 
-img:hover {
+.perfil:hover {
   background-color: #d4c0a6;
-  box-shadow: 2px 2px 5px 1px rgba(75, 75, 75, 0.52);
+  box-shadow: 2px 2px 2px 1px rgba(75, 75, 75, 0.52);
   transform: scale(1.04);
 }
 
 .status {
   background-color: #d1a664;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px 1px rgba(75, 75, 75, 0.52);
+  box-shadow: 1px 1px 3px 1px rgba(75, 75, 75, 0.52);
 
+  color: #3b2a05;
+  font-weight: 600;
+
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  justify-content: center;
+  align-items: center;
+
+  height: 22px;
   width: 130px;
-  height: 25px;
 
-  position: inherit;
-  margin-top: 165px;
+  padding: 12px;
+  margin-top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+
+  transition: box-shadow .2s;
+}
+
+.status:hover {
+  box-shadow: 2px 2px 5px 1px rgba(75, 75, 75, 0.52);
+}
+
+.send-icon {
+  width: 18px;
+}
+
+.name {
+  color: #3b2a05;
+
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 section {
-  padding-top: 150px;
+  width: 95%;
+}
+
+section ul {
+  list-style: none;
+}
+
+.techs h1 {
+  font-size: 23px;
+  margin: 15px 0px 20px;
+
+  color: #8a7850;
+}
+
+.techs ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 0px 50px;
+}
+
+.techs ul li {
+  font-weight: 500;
+  color: #f2ede7;
+  width: 50%;
+  
+  background-color: #8a7850ab;
+  box-shadow: 1px 1px 3px 1px rgba(75, 75, 75, 0.52);
+  border-radius: 50px;
+
+  transition: transform .2s, box-shadow .2s;
+}
+
+.techs ul li:hover {
+  transform: scale(1.04);
+  box-shadow: 2px 2px 5px 1px rgba(75, 75, 75, 0.52);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  margin-top: 30px;
+}
+
+.link {
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+  border-radius: 50px;
+  
+  transition: transform .3s;
+}
+
+.link:hover {
+  transform: scale(1.2);
 }
