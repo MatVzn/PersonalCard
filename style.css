@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
-
+  
   /* border: 1px solid red; */
 }
 
@@ -13,6 +13,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  cursor: url("./assets/cursor.png"), auto;
 }
 
 main {
