@@ -3,43 +3,38 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
+
+  /* border: 1px solid red; */
 }
 
 body {
   background-color: #f2ede7;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 50px;
 }
 
-.container {
+main {
   background-color: #ffffff;
-  width: 800px;
-  height: 500px;
-
-  padding: 5px;
-
   border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px rgba(75, 75, 75, 0.52);
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 600px;
+  height: 400px;
+
+  padding: 2px;
 }
 
 .banner {
-  background-color: #d7c8b6;
-  border-radius: 15px;
-  height: 30%;
-}
-
-img {
-  background: #d7c8b6;
-
-  margin-top: 20px;
-
-  border-radius: 100px;
-  border: #ffffff solid 4px;
-
-  width: 154px;
+  background-color: #c9b69e;
 }
